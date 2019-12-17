@@ -1,16 +1,17 @@
-
-
 $(document).ready(function(){
   $(".saveBtn").on("click", function() {
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id"); // var time = $(this).siblings(".hour").text(); is another way to do this.
-
     localStorage.setItem(time, value);
   });
 
-  $("#currentDay").text(moment().format("MMMM Do YYYY"));
-//Next step is to retrieve data from local storage and put it into the day planner so when we refresh the planner the data persists
 
+  function update() {
+    $("#currentDay").html(moment().format("MMMM Do YYYY hh:mm:ss a"));
+    setInterval(update, 1000);
+  };
+  
+  update(); 
   
   var hourNine = localStorage.getItem("hour-9");
   $("#text9").text(hourNine);
@@ -38,18 +39,7 @@ $(document).ready(function(){
 
   var hourFive = localStorage.getItem("hour-5");
   $("#text5").text(hourFive);
-  
-
-
-
-
 
 });
 
-
-    
-  
-
-
-  
-
+// next/last requirement:  Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
