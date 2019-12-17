@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     localStorage.setItem(time, value);
   });
-  $("#currentDay").text(moment());
+  $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a'"));
 });
 
 //Next step is to retrieve data from local storage and put it into the day planner so when we refresh the planner the data persists
