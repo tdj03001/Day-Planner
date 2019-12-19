@@ -14,7 +14,6 @@ $(document).ready(function(){
   function colorChange() {
     var d = new Date();
     var n = d.getHours();
-    console.log(n);
     if (n < 9 ) {
       $("textarea").addClass("future");
     }
