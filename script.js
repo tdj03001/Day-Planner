@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   //function to run moment.js and show Month Day Year Time
   function dayTime() {
-    $("#currentDay").html(moment().format("MMMM Do YYYY HH:mm:ss a"));
+    $("#currentDay").html(moment().format("MMMM Do YYYY HH:mm:ss"));
     setInterval(dayTime, 1000);
   };
   
@@ -14,7 +14,7 @@ $(document).ready(function(){
   function colorChange() {
     var d = new Date();
     var n = d.getHours();
-    
+    console.log(n);
     if (n < 9 ) {
       $("textarea").addClass("future");
     }
@@ -66,15 +66,7 @@ $(document).ready(function(){
     }
     else if (n === 18) {
       $("textarea").addClass("future");
-      $("#text9").removeClass("past");
-      $("#text10").removeClass("past");
-      $("#text11").removeClass("past");
-      $("#text12").removeClass("past");
-      $("#text13").removeClass("past");
-      $("#text14").removeClass("past");
-      $("#text15").removeClass("past");
-      $("#text16").removeClass("past");
-      $("#text17").removeClass("past");
+      $("textarea").removeClass("past");
     }
     
     setInterval(colorChange, 1000);
