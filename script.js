@@ -14,10 +14,7 @@ $(document).ready(function(){
   function colorChange() {
     var d = new Date();
     var n = d.getHours();
-    if (n < 9 ) {
-      $("textarea").addClass("future");
-    }
-    else if (n > 17) {
+    if (n < 9) {
       $("textarea").addClass("future");
     }
     else if (n === 9) {
@@ -63,7 +60,7 @@ $(document).ready(function(){
       $("#text16").addClass("past");
       $("#text17").addClass("present");
     }
-    else if (n === 18) {
+    else if (n > 17) {
       $("textarea").addClass("future");
       $("textarea").removeClass("past");
     }
