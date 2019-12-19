@@ -1,3 +1,7 @@
+
+
+/* need to add textarea borders*/
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -6,7 +10,9 @@ body {
 
 textarea{
   background: transparent;
-  border: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
