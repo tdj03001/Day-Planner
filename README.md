@@ -14,4 +14,7 @@ Usage
 
  The planner will save your inputs so you can close the app and return later to see what you previously signed yourself up to do. 
 
- ![Screenshot of app](Assets/images/WorkDayPlanner.png)
+ ![Screenshot](Assets/images/WorkDayScheduler.png)
+
+ Link to webapp:  https://tdj03001.github.io/UPenn-Week-5-Homework-DayPlanner/
+ 
