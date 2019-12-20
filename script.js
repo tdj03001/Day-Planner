@@ -30,45 +30,103 @@ $(document).ready(function(){
       $("#text9").removeClass("present");
       $("#text9").addClass("past");
       $("#text10").addClass("present");
+      $("text11").addClass("future");
+      $("text12").addClass("future");
+      $("text13").addClass("future");
+      $("text14").addClass("future");
+      $("text15").addClass("future");
+      $("text16").addClass("future");
+      $("text17").addClass("future");
     }
     else if (n === 11) {
+      $("text9").addClass("past");
       $("#text10").removeClass("present");
       $("#text10").addClass("past");
       $("#text11").addClass("present");
+      $("text12").addClass("future");
+      $("text13").addClass("future");
+      $("text14").addClass("future");
+      $("text15").addClass("future");
+      $("text16").addClass("future");
+      $("text17").addClass("future");
     }
     else if (n === 12) {
+      $("#text9").addClass("past");
+      $("#text10").addClass("past");
       $("#text11").removeClass("present");
       $("#text11").addClass("past");
       $("#text12").addClass("present");
+      $("text13").addClass("future");
+      $("text14").addClass("future");
+      $("text15").addClass("future");
+      $("text16").addClass("future");
+      $("text17").addClass("future");
+
     }
     else if (n === 13) {
+      $("#text9").addClass("past");
+      $("#text10").addClass("past");
+      $("#text11").addClass("past");
       $("#text12").removeClass("present");
       $("#text12").addClass("past");
       $("#text13").addClass("present");
+      $("text14").addClass("future");
+      $("text15").addClass("future");
+      $("text16").addClass("future");
+      $("text17").addClass("future");
     }
     else if (n === 14) {
+      $("#text9").addClass("past");
+      $("#text10").addClass("past");
+      $("#text11").addClass("past");
+      $("#text12").addClass("past");
       $("#text13").removeClass("present");
       $("#text13").addClass("past");
       $("#text14").addClass("present");
+      $("text15").addClass("future");
+      $("text16").addClass("future");
+      $("text17").addClass("future");
+      
     }
     else if (n === 15) {
+      $("#text9").addClass("past");
+      $("#text10").addClass("past");
+      $("#text11").addClass("past");
+      $("#text12").addClass("past");
+      $("#text13").addClass("past");
       $("#text14").removeClass("present");
       $("#text14").addClass("past");
       $("#text15").addClass("present");
+      $("#text16").addClass("future");
+      $("#text17").addClass("future");
     }
     else if (n === 16) {
+      $("#text9").addClass("past");
+      $("#text10").addClass("past");
+      $("#text11").addClass("past");
+      $("#text12").addClass("past");
+      $("#text13").addClass("past");
+      $("#text14").addClass("past");
       $("#text15").removeClass("present");
       $("#text15").addClass("past");
       $("#text16").addClass("present");
+      $("#text17").addClass("future");
     }
     else if (n === 17) {
+      $("#text9").addClass("past");
+      $("#text10").addClass("past");
+      $("#text11").addClass("past");
+      $("#text12").addClass("past");
+      $("#text13").addClass("past");
+      $("#text14").addClass("past");
+      $("#text15").addClass("past");
       $("#text16").removeClass("present");
       $("#text16").addClass("past");
       $("#text17").addClass("present");
     }
     else if (n > 17) {
-      $("textarea").addClass("past");
       $("#text17").removeClass("present");
+      $("textarea").addClass("past");
     }
   }
   
