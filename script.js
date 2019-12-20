@@ -14,11 +14,17 @@ $(document).ready(function(){
   function colorChange() {
     var d = new Date();
     var n = d.getHours();
-    if (n < 9) {
+
+    console.log("test"); //this showed me that the function was running every second, but also led me to see the performance of the app tanks very quickly because I think I'm adding classes by the 10,000s. Need to add some kind of check before adding.
+    
+    if (n < 9) { //resets planner to next day at midnight
       $("textarea").addClass("future");
     }
     else if (n === 9) {
+      $("textarea").addClass("future");
+      $("#text9").removeClass("future");
       $("#text9").addClass("present");
+
     }
     else if (n === 10) {
       $("#text9").removeClass("present");
@@ -61,15 +67,13 @@ $(document).ready(function(){
       $("#text17").addClass("present");
     }
     else if (n > 17) {
-      $("textarea").addClass("future");
-      $("textarea").removeClass("past");
+      $("textarea").addClass("past");
+      $("#text17").removeClass("present");
     }
-    
-    setInterval(colorChange, 1000);
   }
   
-  //run color changing function on page load
-    colorChange();
+  //run color changing function on page load and every 1000ms thereafter
+    setInterval(colorChange, 1000);
   
 
  //function to save entered text to local storage when save button is clicked
@@ -93,48 +97,26 @@ $(document).ready(function(){
   var hourTwelve = localStorage.getItem("hour-12");
   $("#text12").text(hourTwelve);
 
-  var hourOne = localStorage.getItem("hour-13");
-  $("#text13").text(hourOne);
+  var hourThirteen = localStorage.getItem("hour-13");
+  $("#text13").text(hourThirteen);
 
-  var hourTwo = localStorage.getItem("hour-14");
-  $("#text14").text(hourTwo);
+  var hourFourteen = localStorage.getItem("hour-14");
+  $("#text14").text(hourFourteen);
 
-  var hourThree = localStorage.getItem("hour-15");
-  $("#text15").text(hourThree);
+  var hourFifteen = localStorage.getItem("hour-15");
+  $("#text15").text(hourFifteen);
 
-  var hourFour = localStorage.getItem("hour-16");
-  $("#text16").text(hourFour);
+  var hourSixteen = localStorage.getItem("hour-16");
+  $("#text16").text(hourSixteen);
 
-  var hourFive = localStorage.getItem("hour-17");
-  $("#text17").text(hourFive);
-
+  var hourSeventeen = localStorage.getItem("hour-17");
+  $("#text17").text(hourSeventeen);
 
 });
 
-/*============================== Notes while developing:
-
-Could run these functions every hour on the hour:
-
-function its10am() {
-  $("#hour-9").addClass(""past"");
-  $("#hour-9").removeClass("present");
-  $("#hour-10").addClass("present");
-  $("#hour-10").removeClass("future");
-}
-
-function its11am() {
-  $("#hour-10").addClass(""past"");
-  $("#hour-10").removeClass("present");
-  $("#hour-11").addClass("present");
-  $("#hour-11").removeClass("future");
-}
-================================*/
 
 
-/* 
-  dynamically add/remove class of element. setInterval to check every 1000ms and when condition met, change element class. What is that condition?
-  
-  "present" doesn't know the time - it just knows it's not "past" or future. SO when 9am block turns gray, turn 10am block red and 11 and later should be green until 6pm when everything then becomes future again
-    */
+
+
 
   
