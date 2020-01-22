@@ -18,10 +18,10 @@ $(document).ready(function(){
     // console.log("test");  this showed me that the function was running every second, but also led me to see the performance of the app tanks very quickly because I think I'm adding classes by the 10,000s. Need to add some kind of check before adding.
     
     if (n < 9) { //resets planner to next day at midnight
-      $("#textarea").addClass("future");
+      $("textarea").addClass("future");
     }
     else if (n === 9) {
-      $("#textarea").addClass("future");
+      $("textarea").addClass("future");
       $("#text9").removeClass("future");
       $("#text9").addClass("present");
 
@@ -125,8 +125,8 @@ $(document).ready(function(){
       $("#text17").addClass("present");
     }
     else if (n > 17) {
-      $("#text17").removeClass("present");
-      $("#textarea").addClass("past");
+      // $("#text17").removeClass("present");
+      $("textarea").addClass("past");
     }
   }
   
