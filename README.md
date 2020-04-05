@@ -17,5 +17,12 @@ To have a single-day to-do list to help organize your day.
 
  ![Screenshot](Assets/images/WorkDayScheduler.png)
 
- #### Link to webapp:  https://tdj03001.github.io/UPenn-Week-5-Homework-DayPlanner/
+ #### Live Site
+ 
+ https://tdj03001.github.io/UPenn-Week-5-Homework-DayPlanner/
+ 
+ 
+ # GitHub Repo
+ 
+ https://github.com/tdj03001/UPenn-Week-5-Homework-DayPlanner
  
