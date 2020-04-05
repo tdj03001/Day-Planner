@@ -19,7 +19,7 @@ To have a single-day to-do list to help organize your day.
 
  ## Live Site
  
- https://tdj03001.github.io/UPenn-Week-5-Homework-DayPlanner/
+ https://tdj03001.github.io/Day-Planner/
  
  
  ## GitHub Repo
