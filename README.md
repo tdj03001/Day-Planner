@@ -17,12 +17,12 @@ To have a single-day to-do list to help organize your day.
 
  ![Screenshot](Assets/images/WorkDayScheduler.png)
 
- #### Live Site
+ ## Live Site
  
  https://tdj03001.github.io/UPenn-Week-5-Homework-DayPlanner/
  
  
- # GitHub Repo
+ ## GitHub Repo
  
  https://github.com/tdj03001/UPenn-Week-5-Homework-DayPlanner
  
