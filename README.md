@@ -22,7 +22,7 @@ To have a single-day to-do list to help organize your day.
  https://tdj03001.github.io/Day-Planner/
  
  
- ## GitHub Repo
+ ## GitHub Repository
  
  https://github.com/tdj03001/UPenn-Week-5-Homework-DayPlanner
  
